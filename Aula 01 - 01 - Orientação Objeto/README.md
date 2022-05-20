@@ -1,20 +1,20 @@
 ## _Estrtura Objetos_ 
 
-### _OrientaÁ„o ao Objetos_
+### _Orienta√ß√£o ao Objeto_
 
->A programaÁ„o orientada a objetos È um nova forma de construir soluÁıes em tecnologia ao realizar a abstraÁ„o de elementos do mundo >real e traduzir no contexto de programaÁ„o.
+>A programa√ß√£o orientada a objetos √© um nova forma de construir solu√ß√µes em tecnologia ao realizar a abstra√ß√£o de elementos do mundo real e traduzir no contexto de programa√ß√£o.
 >
-> No mundo real temos o habito de classificar tudo com base em caracterÌsticas:
+> No mundo real temos o habito de classificar tudo com base em caracter√≠sticas:
 >
 > Pessoas: tem nome, altura, peso, sexo e idade.
 >
-> Animais: tem especie, raÁa, cor, sexo.
+> Animais: tem especie, ra√ßa, cor, sexo.
 >
-> Cadeiras: tem cor, preÁo, material.
+> Cadeiras: tem cor, pre√ßo, material.
 >
-> Cargos: tem titulo, remuneraÁ„o, obrigaÁıes.
+> Cargos: tem titulo, remunera√ß√£o, obriga√ß√µes.
 >
-> Cidades: tem nome, quantidade de habitantes, prefeito, ·rea em km≤.
+> Cidades: tem nome, quantidade de habitantes, prefeito, √°rea em km¬≤.
 >
 > E para cada um deles percebemos comportamentos em comum
 >
@@ -22,28 +22,28 @@
 >
 > Animais: comem, fazem barulho, se locomovem.
 >
-> Cadeiras: podem ter aÁıs como, dobrar, regular.
+> Cadeiras: podem ter a√ß√µs como, dobrar, regular.
 >
-> Cargos: tem aÁıes como delegar funÁıes, forma de comunicaÁ„o, atender telefone e etc.
+> Cargos: tem a√ß√µes como delegar fun√ß√µes, forma de comunica√ß√£o, atender telefone e etc.
 >
-> Cidades: tem eventos como anivers·rio da cidade, inauguraÁ„o de parques e etc.
+> Cidades: tem eventos como anivers√°rio da cidade, inaugura√ß√£o de parques e etc.
 >
-> Tudo que foi mencionado acima È como o mundo funciona
+> Tudo que foi mencionado acima √© como o mundo funciona
 
 
-#### _AbstraÁ„o_
+#### _Abstra√ß√£o_
 
-- Para traduzir os conceitos comuns do dia a dia para programaÁ„o È necess·rio realizar a abstraÁ„o.
+- Para traduzir os conceitos comuns do dia a dia para programa√ß√£o √© necess√°rio realizar a abstra√ß√£o.
 
-- Independentemente da situaÁ„o que deseja resolver com programaÁ„o È muito importante primeiro pensar como ir· resolver antes de colocar a m„o no cÛdigo.
+- Independentemente da situa√ß√£o que deseja resolver com programa√ß√£o √© muito importante primeiro pensar como ir√° resolver antes de colocar a m√£o no c√≥digo.
 
-- As situaÁıes que sÛ ser„o vistas durante a codificaÁ„o podem ser inseridas depois.
+- As situa√ß√µes que s√≥ ser√£o vistas durante a codifica√ß√£o podem ser inseridas depois.
 
-- Para realizar a abstraÁ„o das entidades antes de comeÁar a pensar no algoritmo È necess·rio separar caraterÌstas de comportamentos. Ao fazer isso conseguimos classificar nossas entidades.
+- Para realizar a abstra√ß√£o das entidades antes de come√ßar a pensar no algoritmo √© necess√°rio separar carater√≠stas de comportamentos. Ao fazer isso conseguimos classificar nossas entidades.
 
 #### _Instanciando Objetos_
 
-> Para aprender o conceitos vamos criar varios objetos da classe aluno no mÈtodo main da classe Main:
+> Para aprender o conceitos vamos criar varios objetos da classe aluno no m√©todo main da classe Main:
 >
 >> Aluno aluno1= new Aluno();
 >>
@@ -53,7 +53,7 @@
 >>
 >> //verifique em variables ao rodar o programa com o Debug ativo
 >
->Cada vari·vel do tipo aluno, que vamos criar o habito de chamar de objetos da classe Aluno possuem seus atributos de forma individual onde È possÌvel atualizar cada um ou executar seus mÈtodos tambÈm.
+>Cada vari√°vel do tipo aluno, que vamos criar o habito de chamar de objetos da classe Aluno possuem seus atributos de forma individual onde √© poss√≠vel atualizar cada um ou executar seus m√©todos tamb√©m.
 >
->Todos os atributos gerados para cada objeto s„o individuais e n„o interferem em outros objetos
+>Todos os atributos gerados para cada objeto s√£o individuais e n√£o interferem em outros objetos
 
