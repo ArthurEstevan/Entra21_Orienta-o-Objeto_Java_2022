@@ -2,9 +2,10 @@
 
 ### _Orientação ao Objeto_
 
->A programação orientada a objetos é um nova forma de construir soluções em tecnologia ao realizar a abstração de elementos do mundo real e traduzir no contexto de programação.
+#### _A programação orientada a objetos é um nova forma de construir soluções em tecnologia ao realizar a abstração de elementos do mundo real e traduzir no contexto de programação._
 >
-> No mundo real temos o habito de classificar tudo com base em características:
+>
+>> No mundo real temos o habito de classificar tudo com base em características:
 >
 > Pessoas: tem nome, altura, peso, sexo e idade.
 >
@@ -16,7 +17,7 @@
 >
 > Cidades: tem nome, quantidade de habitantes, prefeito, área em km².
 >
-> E para cada um deles percebemos comportamentos em comum
+>> E para cada um deles percebemos comportamentos em comum
 >
 > Pessoas: andam, correm, falam, envelhecem.
 >
