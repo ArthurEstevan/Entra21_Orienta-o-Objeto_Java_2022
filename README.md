@@ -1,11 +1,11 @@
-## Repository with practices carried out in class  
+## _Repositório com práticas realizadas em aula_
 
-> Practical content carried out in the classroom during the Entra21 project:
+> _Conteúdo prático realizado em sala de aula durante o projeto Entra21:_
 
 ![Gif Entra21](https://raw.githubusercontent.com/seiler-emerson/Entra21_Logica_Java_2022/main/gif/entra21.gif)
 
-## Class Taught
+## _Aula ministrada_
 
 | AULA | ASSUNTO |
 |------|---------|
-|Aula 01 - 01|[POO - Object Orientation Program](./Aula%2001%20-%2001%20-%20Orientação%20Objeto/)                                    
+|Aula 01 - 01|[POO - Programação Orientada a Objetos ](./Aula%2001%20-%2001%20-%20Orientação%20Objeto/)                                    
