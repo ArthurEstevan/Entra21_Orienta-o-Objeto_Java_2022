@@ -1,4 +1,4 @@
-package br.com.entra21.orientacao.objeto.classes;
+package br.com.entra21.orientacao.objeto.aula01.classes;
 
 public class Professor {
 	
@@ -14,26 +14,26 @@ public class Professor {
 	private byte quantidadeAlunos;
 	
 	public Professor() {
-		//construtor vazio não inicializa os atributos
+		//construtor vazio não inicializa os atributos, apenas serve para dar new na minha classe
 	}
 	
-	public Professor(String novoNome) {
+	public Professor(String novoNome) { // construtor onde eu posso atualizar minhas váriaveis da classe
 		this.nome=novoNome;
 		//construtor com parâmetros
 		//pode inicializar alguns ou todos os atributos
 	}
 	
-	public Professor(byte novaIdade) {
+	public Professor(byte novaIdade) { // construtor onde eu posso atualizar minhas váriaveis da classe
 		this.idade=novaIdade;
 		//construtor com parâmetros
 		//pode inicializar alguns ou todos os atributos
 	}
 	
-	public String getNome() {
+	public String getNome() { //serve para chamar um atributo da minha
 		 return this.nome;
 	}
 	
-	public void setNome(String nome) {
+	public void setNome(String nome) { // define um valor para meus atributos
 		//receber um valor novo la de fora
 		this.nome=nome;
 	}
