@@ -7,6 +7,7 @@ import br.com.entra21.orientacao.objeto.aula01.classes.Aluno; //importando minha
 import br.com.entra21.orientacao.objeto.aula01.classes.Professor; //importando minha classe
 
 import br.com.entra21.orientacao.objeto.aula02.heranca.Diretor; //importando minha classe
+import br.com.entra21.orientacao.objeto.aula02.heranca.Funcionario;
 
 public class Main {
 
@@ -48,17 +49,31 @@ public class Main {
 
 	public static void aprenderClassesObjetos() {
 		
+		//--------------------------Criação da Classe Funcionario--------------------------//
+		
+		Funcionario funcionario01 = new Funcionario(); //criação do meu objeto com os recursos da classe
+		funcionario01.setIdade((byte) 18);
+		funcionario01.setNome("Arthur");
+		funcionario01.setCargoAtual("Auxiliar de Modelagem"); // definindo meus atributos para meu construtor vazio com get
+		funcionario01.setSalario(1500f);
+		
+		//usando meus atributos com get
+		System.out.println("Hello, my name is " + funcionario01.getNome() + ". I'm " +funcionario01.getIdade());
+		
+		Funcionario funcionario02 = new Funcionario("Arthur", (byte) 18, "Professor", 1500f, "055.055.055-20"); // passando valores para meus atributos, que foram solicitados dentro do construtor
+		funcionario02.setCpf("055.055.055-10");
+		
 		//--------------------------Criação da Classe Diretor--------------------------//
 		
-		Diretor diretor01 = new Diretor();
+		Diretor diretor01 = new Diretor(); //criação do meu objeto com os recursos da classe
 		
-		diretor01.realizarApresentacao();
+		diretor01.realizarApresentacao(); // chamando um método da classe
 		
 		Diretor diretor02 = new Diretor();
 		
 		diretor02.realizarApresentacao();
 		
-		Diretor diretor03 = new Diretor("Arthur", (byte) 20);
+		Diretor diretor03 = new Diretor("Arthur", (byte) 20, "055.999.888-29", "Inglês", (byte) 20);
 		
 		diretor03.realizarApresentacao();
 		
