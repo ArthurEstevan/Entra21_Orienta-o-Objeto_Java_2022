@@ -38,7 +38,7 @@
 
 - Independentemente da situação que deseja resolver com programação é muito importante primeiro pensar como irá resolver antes de colocar a mão no código.
 
-- As situações que só serão vistas durante a codificação podem ser inseridas depois.
+- As situações que só serão vistas depois, durante a codificação podem ser inseridas.
 
 - Para realizar a abstração das entidades antes de começar a pensar no algoritmo é necessário separar caraterístas de comportamentos. Ao fazer isso conseguimos classificar nossas entidades.
 
