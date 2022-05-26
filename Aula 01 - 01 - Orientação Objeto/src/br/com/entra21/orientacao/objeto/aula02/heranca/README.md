@@ -1,7 +1,7 @@
-## _Estrutura Herança_
+## _Estrutura HeranÃ§a_
 
-### _Compreendendo Herança_
+### _Compreendendo HeranÃ§a_
 
-Na programação modular existe uma técnica chamada Herança que é utilizada para reuso, evitando a repetição de um mesmo trecho de código que faz as mesmas coisas em diversos lugares no código, ajudando então na boa prática de deixar o código mais objetivo e limpo.
+Na programaÃ§Ã£o modular existe uma tÃ©cnica chamada HeranÃ§a que Ã© utilizada para reuso, evitando a repetiÃ§Ã£o de um mesmo trecho de cÃ³digo que faz as mesmas coisas em diversos lugares no cÃ³digo, ajudando entÃ£o na boa prÃ¡tica de deixar o cÃ³digo mais objetivo e limpo.
 
-![Imagem Classes](/Aula%2001%20-%2001%20-%20Orienta%C3%A7%C3%A3o%20Objeto/Image/Heranca.png)
+![Imagem Classes](file:///C:/Users/Modelagem13/Desktop/Heran%C3%A7a.jpg)
