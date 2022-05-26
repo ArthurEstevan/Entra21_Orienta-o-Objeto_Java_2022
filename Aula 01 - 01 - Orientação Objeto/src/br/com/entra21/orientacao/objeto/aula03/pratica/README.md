@@ -5,7 +5,8 @@
 
 #### Professor:
  
->> - características que todo professor tem 
+> características que todo professor tem: 
+>> 
 >> - nome
 >> - idade
 >> - disciplina atual
@@ -19,7 +20,8 @@
 
 #### Aluno:
 
->> - características que todo aluno tem
+> características que todo aluno tem
+> 
 >> - nome
 >> - idade
 >> - disciplina atual
