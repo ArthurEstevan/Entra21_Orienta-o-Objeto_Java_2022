@@ -7,10 +7,14 @@ import br.com.entra21.orientacao.objeto.aula01.classes.Aluno; //importando minha
 import br.com.entra21.orientacao.objeto.aula01.classes.Professor; //importando minha classe
 
 import br.com.entra21.orientacao.objeto.aula02.heranca.Diretor; //importando minha classe
-import br.com.entra21.orientacao.objeto.aula02.heranca.Funcionario;
-import br.com.entra21.orientacao.objeto.aula03.pratica.Atleta;
-import br.com.entra21.orientacao.objeto.aula03.pratica.Nadador;
-import br.com.entra21.orientacao.objeto.aula03.pratica.Velocista;
+
+import br.com.entra21.orientacao.objeto.aula02.heranca.Funcionario; //importando minha classe
+
+import br.com.entra21.orientacao.objeto.aula03.pratica.Atleta; //importando minha classe
+
+import br.com.entra21.orientacao.objeto.aula03.pratica.Nadador; //importando minha classe
+
+import br.com.entra21.orientacao.objeto.aula03.pratica.Velocista; //importando minha classe
 
 public class Main {
 
@@ -104,14 +108,12 @@ public class Main {
 	// --------------Aprendendo Herança--------------//
 	public static void aprenderClassesOHerança() {
 
-		// --------------------------Criação da Classe
-		// Funcionario--------------------------//
+		// --------------------------Criação da Classe Funcionario--------------------------//
 
 		Funcionario funcionario01 = new Funcionario(); // criação do meu objeto com os recursos da classe
 		funcionario01.setIdade((byte) 18);
 		funcionario01.setNome("Arthur");
-		funcionario01.setCargoAtual("Auxiliar de Modelagem"); // definindo meus atributos para meu construtor vazio com
-																// get
+		funcionario01.setCargoAtual("Auxiliar de Modelagem"); // definindo meus atributos para meu construtor vazio com get
 		funcionario01.setSalario(1500f);
 
 		// usando meus atributos com get
@@ -119,19 +121,10 @@ public class Main {
 
 		Funcionario funcionario02 = new Funcionario("Arthur", (byte) 18, "Professor", 1500f, "055.055.055-20"); // passando
 																												// valores
-																												// para
-																												// meus
-																												// atributos,
-																												// que
-																												// foram
-																												// solicitados
-																												// dentro
-																												// do
-																												// construtor
+																										// construtor
 		funcionario02.setCpf("055.055.055-10");
 
-		// --------------------------Criação da Classe
-		// Diretor--------------------------//
+		// --------------------------Criação da Classe Diretor--------------------------//
 
 		Diretor diretor01 = new Diretor(); // criação do meu objeto com os recursos da classe
 
@@ -151,8 +144,7 @@ public class Main {
 
 	public static void aprenderClassesObjetos() {
 
-		// --------------------------Criação da Classe
-		// Professor--------------------------//
+		// --------------------------Criação da Classe Professor--------------------------//
 
 		Professor professorJava = new Professor("nome"); // criação do meu objeto com os recursos da classe
 
