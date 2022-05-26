@@ -8,9 +8,9 @@ import br.com.entra21.orientacao.objeto.aula01.classes.Professor; //importando m
 
 import br.com.entra21.orientacao.objeto.aula02.heranca.Diretor; //importando minha classe
 import br.com.entra21.orientacao.objeto.aula02.heranca.Funcionario;
-import br.com.entra21.orientacao.objeto.pratica.Atleta;
-import br.com.entra21.orientacao.objeto.pratica.Nadador;
-import br.com.entra21.orientacao.objeto.pratica.Velocista;
+import br.com.entra21.orientacao.objeto.aula03.pratica.Atleta;
+import br.com.entra21.orientacao.objeto.aula03.pratica.Nadador;
+import br.com.entra21.orientacao.objeto.aula03.pratica.Velocista;
 
 public class Main {
 

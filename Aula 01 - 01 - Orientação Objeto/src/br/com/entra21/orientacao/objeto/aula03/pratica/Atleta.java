@@ -1,4 +1,4 @@
-package br.com.entra21.orientacao.objeto.pratica;
+package br.com.entra21.orientacao.objeto.aula03.pratica;
 
 public class Atleta { // essa é minha super-Classe que vai ser de atributos para minhas outras classes
 	

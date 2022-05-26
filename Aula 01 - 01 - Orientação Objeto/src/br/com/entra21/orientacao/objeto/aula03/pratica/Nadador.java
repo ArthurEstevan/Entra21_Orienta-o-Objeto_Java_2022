@@ -1,4 +1,4 @@
-package br.com.entra21.orientacao.objeto.pratica;
+package br.com.entra21.orientacao.objeto.aula03.pratica;
 
 public class Nadador extends Atleta { // minha classe Nadador pegando atributos da minha super-Classe Atleta
 

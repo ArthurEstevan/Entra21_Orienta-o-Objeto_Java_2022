@@ -1,4 +1,4 @@
-package br.com.entra21.orientacao.objeto.pratica;
+package br.com.entra21.orientacao.objeto.aula03.pratica;
 
 public class Velocista extends Atleta { // minha classe Velocista pegando atributos da minha super-Classe Atleta
 
