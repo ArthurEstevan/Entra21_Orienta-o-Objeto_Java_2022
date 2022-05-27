@@ -10,11 +10,24 @@ import br.com.entra21.orientacao.objeto.aula02.heranca.Diretor; //importando min
 
 import br.com.entra21.orientacao.objeto.aula02.heranca.Funcionario; //importando minha classe
 
+import br.com.entra21.orientacao.objeto.aula02.heranca.Pessoa;//importando minha classe
+
 import br.com.entra21.orientacao.objeto.aula03.pratica.Atleta; //importando minha classe
 
 import br.com.entra21.orientacao.objeto.aula03.pratica.Nadador; //importando minha classe
 
 import br.com.entra21.orientacao.objeto.aula03.pratica.Velocista; //importando minha classe
+
+import br.com.entra21.orientacao.objeto.aula04.conceito.poo.Ponto; //importando minha classe
+
+import br.com.entra21.orientacao.objeto.aula04.conceito.poo.Reta; //importando minha classe
+
+import br.com.entra21.orientacao.objeto.aula04.interfaces.Capivara; //importando minha classe
+import br.com.entra21.orientacao.objeto.aula04.interfaces.Carro;
+import br.com.entra21.orientacao.objeto.aula04.interfaces.Gato; //importando minha classe
+
+import br.com.entra21.orientacao.objeto.aula04.interfaces.Humano; //importando minha classe
+import br.com.entra21.orientacao.objeto.aula04.interfaces.Planta;
 
 public class Main {
 
@@ -25,13 +38,16 @@ public class Main {
 		byte opcao;
 
 		do {
+			System.out.println();
 			System.out.println("Choose Option");
 			System.out.println("0 - Sair");
 			System.out.println("01 - Aprender Classes");
 			System.out.println("02 - Aprender Herança");
 			System.out.println("03 - Aprender Polimorfismo");
-
+			System.out.println("04 - Aprender Conceito POO");
+			System.out.println("05 - Aprender Polimorfismo com Interface");
 			opcao = inPut.nextByte();
+			System.out.println();
 
 			switch (opcao) {
 			case 0:
@@ -50,6 +66,14 @@ public class Main {
 				aprenderClassesPolimorfismo();
 				break;
 
+			case 4:
+				aprenderConceitoPoo();
+				break;
+
+			case 5:
+				aprenderPolimorfismoInterface();
+				break;
+
 			default:
 				System.out.println("Choose option correct");
 				break;
@@ -57,94 +81,13 @@ public class Main {
 
 		} while (opcao != 0);
 
-
-	}
-
-	// --------------Aprendendo Polimorfismo--------------//
-
-	public static void aprenderClassesPolimorfismo() {
-
-		// padrão de polimorfismo para comportamentos(métodos) é herdar.
-
-		// segunda forma do polimorfismo é fazer completamente os
-		// comportamentos(métodos) do meu jeito.
-
-		// terceira forma do polimorfismo é aproveitar a minha herança e fazer um
-		// diferencial.
-
-		Atleta cr7 = new Atleta();
-
-		cr7.setNome("Cristiano Ronaldo");
-		cr7.comemorarVitoria();
-
-		System.out.println("----------------------------");
-
-		Nadador michaelPhelps = new Nadador();
-
-		michaelPhelps.setNome("Michael Phelps");
-
-		Nadador sergioMichael = new Nadador("Sérgio Michael", (byte) 39, 23, 40, "Piscína", "Sunga e Touca");
-
-		System.out.println("Quer escrever uma frase?");
-		String frase = inPut.nextLine();
-
-		sergioMichael.comemorarVitoria(frase); // procura primeiro na minha classe Nadador, se não tiver busca na
-												// herança.
-
-		michaelPhelps.comemorarVitoria();
-
-		System.out.println("----------------------------");
-
-		Velocista usainBolt = new Velocista();
-
-		usainBolt.setNome("Usain Bolt");
-
-		usainBolt.comemorarVitoria();
-
-		System.out.println("----------------------------");
-
-	}
-
-	// --------------Aprendendo Herança--------------//
-	public static void aprenderClassesOHerança() {
-
-		// --------------------------Criação da Classe Funcionario--------------------------//
-
-		Funcionario funcionario01 = new Funcionario(); // criação do meu objeto com os recursos da classe
-		funcionario01.setIdade((byte) 18);
-		funcionario01.setNome("Arthur");
-		funcionario01.setCargoAtual("Auxiliar de Modelagem"); // definindo meus atributos para meu construtor vazio com get
-		funcionario01.setSalario(1500f);
-
-		// usando meus atributos com get
-		System.out.println("Hello, my name is " + funcionario01.getNome() + ". I'm " + funcionario01.getIdade());
-
-		Funcionario funcionario02 = new Funcionario("Arthur", (byte) 18, "Professor", 1500f, "055.055.055-20"); // passando
-																												// valores
-																										// construtor
-		funcionario02.setCpf("055.055.055-10");
-
-		// --------------------------Criação da Classe Diretor--------------------------//
-
-		Diretor diretor01 = new Diretor(); // criação do meu objeto com os recursos da classe
-
-		diretor01.realizarApresentacao(); // chamando um método da classe
-
-		Diretor diretor02 = new Diretor();
-
-		diretor02.realizarApresentacao();
-
-		Diretor diretor03 = new Diretor("Arthur", (byte) 20, "055.999.888-29", "Inglês", (byte) 20);
-
-		diretor03.realizarApresentacao();
-
 	}
 
 	// --------------Aprendendo P00--------------//
-
 	public static void aprenderClassesObjetos() {
 
-		// --------------------------Criação da Classe Professor--------------------------//
+		// --------------------------Criação da Classe
+		// Professor--------------------------//
 
 		Professor professorJava = new Professor("nome"); // criação do meu objeto com os recursos da classe
 
@@ -176,6 +119,157 @@ public class Main {
 
 		alunoTeste.responderChamada(); // chamando um método da minha classe aluno
 		alunoTeste.responderChamada();
+
+	}
+
+	// --------------Aprendendo Herança--------------//
+	public static void aprenderClassesOHerança() {
+
+		// --------------------------Criação da Classe
+		// Funcionario--------------------------//
+
+		Funcionario funcionario01 = new Funcionario(); // criação do meu objeto com os recursos da classe
+		funcionario01.setIdade((byte) 18);
+		funcionario01.setNome("Arthur");
+		funcionario01.setCargoAtual("Auxiliar de Modelagem"); // definindo meus atributos para meu construtor vazio com
+																// get
+		funcionario01.setSalario(1500f);
+
+		// usando meus atributos com get
+		System.out.println("Hello, my name is " + funcionario01.getNome() + ". I'm " + funcionario01.getIdade());
+
+		Funcionario funcionario02 = new Funcionario("Arthur", (byte) 18, "Professor", 1500f, "055.055.055-20");
+		// passando valores construtor
+
+		funcionario02.setCpf("055.055.055-10");
+
+		// --------------------------Criação da Classe
+		// Diretor--------------------------//
+
+		Diretor diretor01 = new Diretor(); // criação do meu objeto com os recursos da classe
+
+		diretor01.realizarApresentacao(); // chamando um método da classe
+
+		Diretor diretor02 = new Diretor();
+
+		diretor02.realizarApresentacao();
+
+		Diretor diretor03 = new Diretor("Arthur", (byte) 20, "055.999.888-29", "Inglês", (byte) 20);
+
+		diretor03.realizarApresentacao();
+
+	}
+
+	// --------------Aprendendo Polimorfismo--------------//
+	public static void aprenderClassesPolimorfismo() {
+
+		// padrão de polimorfismo para comportamentos(métodos) é herdar.
+
+		// segunda forma do polimorfismo é fazer completamente os
+		// comportamentos(métodos) do meu jeito.
+
+		// terceira forma do polimorfismo é aproveitar a minha herança e fazer um
+		// diferencial.
+
+		Atleta cr7 = new Atleta();
+
+		cr7.setNome("Cristiano Ronaldo");
+		cr7.comemorarVitoria();
+
+		System.out.println("----------------------------");
+
+		Nadador michaelPhelps = new Nadador();
+
+		michaelPhelps.setNome("Michael Phelps");
+
+		Nadador sergioMichael = new Nadador("Sérgio Michael", (byte) 39, 23, 40, "Piscína", "Sunga e Touca");
+
+		System.out.println("Quer escrever uma frase?");
+		String frase = inPut.nextLine();
+
+		sergioMichael.comemorarVitoria(frase);
+		// procura primeiro na minha classe Nadador, se não tiver busca na herança.
+
+		michaelPhelps.comemorarVitoria();
+
+		System.out.println("----------------------------");
+
+		Velocista usainBolt = new Velocista();
+
+		usainBolt.setNome("Usain Bolt");
+
+		usainBolt.comemorarVitoria();
+
+		System.out.println("----------------------------");
+
+	}
+
+	// --------------Aprendendo Conceito Poo--------------//
+	private static void aprenderConceitoPoo() {
+
+		// a classe ponto tem auta coesão porque é preciso nas suas responsabilidades
+		Ponto pontoAlto = new Ponto(30f, 10000f);
+
+		Ponto esquerdaBaixo = new Ponto(-20f, -100f);
+
+		// a classe reta é incializada por Pontos que podem não estar inicializada
+		// asociação de reta e ponto e de um para muitos respectivos
+		Reta torta = new Reta();
+
+		Reta retaDiagonal = new Reta(pontoAlto, esquerdaBaixo);
+
+	}
+
+	// --------------Aprendendo Polimorfismo com Interface--------------//
+	private static void aprenderPolimorfismoInterface() {
+
+		Humano arthur = new Humano();
+
+		arthur.setNome("Arthur");
+
+		arthur.apresentarSe();
+
+		arthur.alimentar("casca de banana");
+		System.out.println("------------------------------------");
+
+		Gato gato = new Gato("JEF", new Pessoa("Arthur", (byte) 19, ""));
+
+		gato.alimentar("ração");
+		gato.comunicar("não edentificado");
+		gato.locomover();
+		System.out.println("------------------------------------");
+
+		Capivara robson = new Capivara();
+
+		robson.alimentar("e água");
+		robson.comunicar(null);
+		robson.locomover();
+		System.out.println("------------------------------------");
+
+		Planta plantinha = new Planta("Paubrasilia echinata");
+		plantinha.locomover();
+		plantinha.alimentar("Carne");
+		plantinha.comunicar(null);
+		System.out.println("------------------------------------");
+
+		byte abastecer;
+		String marca, wanna;
+
+		System.out.println("Quer abastecer quantos?");
+		abastecer = inPut.nextByte();
+
+		Carro newCarro = new Carro(abastecer);
+
+		System.out.println("Qual marca do seu carro?");
+		marca = inPut.next();
+
+		newCarro.carroMarca(marca);
+
+		System.out.println(newCarro.getMarca() + " está com " + newCarro.getGasolina() + " de gasolina");
+
+		System.out.println("Você quer freia?");
+		wanna = inPut.next();
+		newCarro.carroFreiar(wanna);
 
 	}
 
