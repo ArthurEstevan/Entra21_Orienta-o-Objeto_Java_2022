@@ -28,6 +28,7 @@ import br.com.entra21.orientacao.objeto.aula04.interfaces.Gato; //importando min
 
 import br.com.entra21.orientacao.objeto.aula04.interfaces.Humano; //importando minha classe
 import br.com.entra21.orientacao.objeto.aula04.interfaces.Planta;
+import br.com.entra21.orientacao.objeto.aula05.revisao.Revisao;
 
 public class Main {
 
@@ -46,6 +47,7 @@ public class Main {
 			System.out.println("03 - Aprender Polimorfismo");
 			System.out.println("04 - Aprender Conceito POO");
 			System.out.println("05 - Aprender Polimorfismo com Interface");
+			System.out.println("06 - Revisão");
 			opcao = inPut.nextByte();
 			System.out.println();
 
@@ -73,7 +75,11 @@ public class Main {
 			case 5:
 				aprenderPolimorfismoInterface();
 				break;
-
+				
+			case 6:
+				revisarPOO();
+				break;
+				
 			default:
 				System.out.println("Choose option correct");
 				break;
@@ -83,11 +89,16 @@ public class Main {
 
 	}
 
+	public static void revisarPOO() {
+
+		Revisao.revisar();
+		
+	}
+
 	// --------------Aprendendo P00--------------//
 	public static void aprenderClassesObjetos() {
 
-		// --------------------------Criação da Classe
-		// Professor--------------------------//
+		// --------------------------Criação da Classe Professor--------------------------//
 
 		Professor professorJava = new Professor("nome"); // criação do meu objeto com os recursos da classe
 
@@ -125,8 +136,7 @@ public class Main {
 	// --------------Aprendendo Herança--------------//
 	public static void aprenderClassesOHerança() {
 
-		// --------------------------Criação da Classe
-		// Funcionario--------------------------//
+		// --------------------------Criação da Classe Funcionario--------------------------//
 
 		Funcionario funcionario01 = new Funcionario(); // criação do meu objeto com os recursos da classe
 		funcionario01.setIdade((byte) 18);
@@ -255,21 +265,10 @@ public class Main {
 		byte abastecer;
 		String marca, wanna;
 
-		System.out.println("Quer abastecer quantos?");
-		abastecer = inPut.nextByte();
-
-		Carro newCarro = new Carro(abastecer);
+		Carro newCarro = new Carro();
 
 		System.out.println("Qual marca do seu carro?");
 		marca = inPut.next();
-
-		newCarro.carroMarca(marca);
-
-		System.out.println(newCarro.getMarca() + " está com " + newCarro.getGasolina() + " de gasolina");
-
-		System.out.println("Você quer freia?");
-		wanna = inPut.next();
-		newCarro.carroFreiar(wanna);
 
 	}
 

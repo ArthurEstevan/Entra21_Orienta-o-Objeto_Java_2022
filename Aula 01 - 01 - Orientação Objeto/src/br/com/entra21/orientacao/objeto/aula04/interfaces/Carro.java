@@ -2,49 +2,34 @@ package br.com.entra21.orientacao.objeto.aula04.interfaces;
 
 public class Carro implements Automovel {
 
-	private byte gasolina;
+	private float saldo;
+	private float gasolina;
 	private String marca;
 
 	public Carro() {
 
 	}
 
-	public Carro(byte gasolina) {
+	public Carro(float dinheiro, byte gasolina, String marca) {
+		this.saldo = dinheiro;
 		this.gasolina = gasolina;
+		this.marca = marca;
 	}
 
-	public byte getGasolina() {
+	public float getDinheiro() {
+		return saldo;
+	}
+
+	public void setSaldo(float saldo) {
+		this.saldo = saldo;
+	}
+
+	public float getGasolina() {
 		return gasolina;
 	}
 
-	public void setGasolina(byte gasolina) {
+	public void setGasolina(float gasolina) {
 		this.gasolina = gasolina;
-	}
-
-	@Override
-	public boolean carroAcelerar() {
-		if (gasolina > 10) {
-			return true;
-		} else {
-			return false;
-		}
-
-	}
-
-	@Override
-	public boolean carroFreiar(String wanna) {
-		if (wanna.equals("sim")) {
-			System.out.println("freiando");
-			return true;
-		} else {
-			System.out.println("Bateu");
-			return false;
-		}
-	}
-
-	@Override
-	public void carroMarca(String marca) {
-		this.marca = marca;
 	}
 
 	public String getMarca() {
@@ -54,7 +39,23 @@ public class Carro implements Automovel {
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
-	
-	
+
+	@Override
+	public boolean carroAcelerar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean carroFreiar(String quero) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void carroMarca(String marca) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
