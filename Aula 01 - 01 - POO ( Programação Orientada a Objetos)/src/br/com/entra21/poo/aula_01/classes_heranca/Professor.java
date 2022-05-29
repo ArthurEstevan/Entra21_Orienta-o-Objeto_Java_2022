@@ -1,4 +1,4 @@
-package br.com.entra21.poo.aula_01.classes.heranca;
+package br.com.entra21.poo.aula_01.classes_heranca;
 
 public class Professor extends Pessoa {
 	

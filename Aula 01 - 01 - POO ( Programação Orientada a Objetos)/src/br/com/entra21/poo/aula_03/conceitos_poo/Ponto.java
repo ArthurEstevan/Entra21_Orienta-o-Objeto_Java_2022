@@ -1,4 +1,4 @@
-package br.com.entra21.poo.aula_03.conceitos.poo;
+package br.com.entra21.poo.aula_03.conceitos_poo;
 
 public class Ponto {
 	

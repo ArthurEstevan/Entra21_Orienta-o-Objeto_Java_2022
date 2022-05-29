@@ -2,12 +2,12 @@ package br.com.entra21.poo.principal;
 
 import java.util.Scanner;
 
-import br.com.entra21.poo.aula_01.classes.heranca.Aluno;
-import br.com.entra21.poo.aula_01.classes.heranca.Professor;
+import br.com.entra21.poo.aula_01.classes_heranca.Aluno;
+import br.com.entra21.poo.aula_01.classes_heranca.Professor;
 import br.com.entra21.poo.aula_02.polimorfismo.Nadador;
 import br.com.entra21.poo.aula_02.polimorfismo.Velocista;
-import br.com.entra21.poo.aula_03.conceitos.poo.Ponto;
-import br.com.entra21.poo.aula_03.conceitos.poo.Reta;
+import br.com.entra21.poo.aula_03.conceitos_poo.Ponto;
+import br.com.entra21.poo.aula_03.conceitos_poo.Reta;
 import br.com.entra21.poo.aula_04.interface_.Animal;
 import br.com.entra21.poo.aula_04.interface_.Extraterrestre;
 import br.com.entra21.poo.aula_04.interface_.Humano;

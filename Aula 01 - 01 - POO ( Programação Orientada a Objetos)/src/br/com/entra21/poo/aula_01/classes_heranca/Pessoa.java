@@ -1,4 +1,4 @@
-package br.com.entra21.poo.aula_01.classes.heranca;
+package br.com.entra21.poo.aula_01.classes_heranca;
 
 public class Pessoa {
 	//minha super clase, donde pessoas herdam os atributos que tenham em comum.
