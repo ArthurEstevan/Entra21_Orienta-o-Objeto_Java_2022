@@ -1,4 +1,4 @@
-package br.com.entra21.poo.main;
+package br.com.entra21.oop.main;
 
 import java.util.Scanner;
 
