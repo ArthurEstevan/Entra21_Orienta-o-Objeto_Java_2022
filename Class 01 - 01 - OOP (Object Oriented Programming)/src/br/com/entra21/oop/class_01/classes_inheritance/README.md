@@ -17,5 +17,5 @@
 
 ### _Flowchart_
 
-![class and inheritance](/Aula%2001%20-%2001%20-%20POO%20(%20Programação%20Orientada%20a%20Objetos)/Image/Classes%20e%20Herança.jpeg "image")
+![class and inheritance](/Class%2001%20-%2001%20-%20OOP%20(Object%20Oriented%20Programming)/Image/Classes%20e%20Herança.jpeg)
 
